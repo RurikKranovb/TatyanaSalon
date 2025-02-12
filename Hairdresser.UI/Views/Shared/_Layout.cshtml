@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Hairdresser.UI</title>
-    
+
     @await Html.PartialAsync("Partial/_Styles")
+    @await RenderSectionAsync("Styles", false)
 
 </head>
 <body>
@@ -14,7 +15,7 @@
 
     @await Html.PartialAsync("Partial/_NavBar")
 
-    @await Html.PartialAsync("Partial/_Header")
+    @* @await Html.PartialAsync("Partial/_Header") *@
 
     <div class="container">
         <main role="main" class="pb-3">
@@ -24,7 +25,7 @@
 
     @await Html.PartialAsync("Partial/_Footer")
 
-@await Html.PartialAsync("Partial/_BackToTop")
+    @await Html.PartialAsync("Partial/_BackToTop")
 
 
     @await Html.PartialAsync("Partial/_Scripts")

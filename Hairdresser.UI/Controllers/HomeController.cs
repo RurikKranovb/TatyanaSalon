@@ -11,7 +11,7 @@ namespace Hairdresser.UI.Controllers
         public IActionResult Opening() => View();
         public IActionResult Price() => View();
         public IActionResult Service() => View();
-        //public IActionResult Team() => View();
+        public IActionResult Team() => View();
         public IActionResult Testimonial() => View();
     }
 }
